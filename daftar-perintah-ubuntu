@@ -1,0 +1,3 @@
+Perintah untuk mount hardisk/ssd di ubuntu
+#sudo 
+#root@miswan-os: mount /dev/sdb1 /media/wanwanvm/
