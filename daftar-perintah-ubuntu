@@ -1,3 +1,12 @@
 Perintah untuk mount hardisk/ssd di ubuntu
-#sudo 
-#root@miswan-os: mount /dev/sdb1 /media/wanwanvm/
+mengatasi hardisk format NTFS tidak bisa menulis
+
+(base) wanwanvm@miswan-os:~$ sudo ntfsfix /dev/sdb1
+[sudo] password for wanwanvm: 
+Mounting volume... OK
+Processing of $MFT and $MFTMirr completed successfully.
+Checking the alternate boot sector... OK
+NTFS volume version is 3.1.
+NTFS partition /dev/sdb1 was processed successfully.
+(base) wanwanvm@miswan-os:~$ sudo mount /dev/sdb1 /media/wanwanvm/
+
