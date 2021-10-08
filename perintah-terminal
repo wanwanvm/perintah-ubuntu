@@ -1,0 +1,124 @@
+rename -v ’s/\.htm$/\.html/’ *.htm
+Batch rename all files in directory (dari .htm ke .html)
+
+sudo sed -i 's/http:\/\/id./http:\/\//g' /etc/apt/sources.list
+Ganti repo source dari server id ke server main
+
+cp -avu /arsip_sumber /arsip_tujuan
+Kopi sebuah folder dan isinya ke folder tujuan hanya yg terbaru sambil lihat progress
+
+rm -r /arsip_yg_mau_dihapus
+Hapus secara rekursif sebuah folder berikut isi
+
+chmod 777 -R /arsip_tujuan
+Buka seluruh hak guna atas folder
+
+du -hs /arsip_tujuan
+Cek ukuran folder tujuan
+
+df -h /arsip_tujuan
+Cek persentase penggunaan folder
+
+sudo poweroff
+Shutdown komputer server
+
+exit
+Logoff atau keluar dari terminal
+
+sudo mount -t ntfs-3g /dev/sdb1 /media/wd
+Mount hdd external ke server
+
+sudo apt-get install package_name
+Install paket dengan semua dependensi
+
+sudo apt-get remove package_name
+Uninstall paket dengan meninggalkan lib
+
+sudo apt-get purge package_name
+Hapus aplikasi besarta seluruh lib yg berhubungan
+
+sudo apt-cache search keyword
+Cari paket yang relevan dengan keyword
+
+sudo apt-cache show package_name
+Tunjukkan rincian paket
+
+sudo apt-get update
+Update daftar repo terbaru
+
+sudo apt-get upgrade
+Upgrade semua paket ke terbaru
+
+sudo add-apt-repository ppa:source_name/package_name
+Tambahkan repo non-resmi
+
+sudo add-apt-repository -r ppa:source_name/package_name
+Hapus repo non-resmi
+
+mysqldump -u root -p database_name > /folder/backup_name.sql
+Backup satu database ke satu file
+
+mysql -u root -p
+mysql create database database_name;
+mysql -u root -p database_name < /folder/backup_name.sql
+Restore database dari satu file sql                    
+
+nano /location/file.txt
+Ctrl \ untuk mulai find & replace
+Open terminal text editor
+
+sudo apt-get install automysqlbackup
+sudo automysqlbackup
+cd /var/lib/automysqlbackup
+Untuk backup secara otomatis seluruh database mysql per hari, per minggu, dan per bulan
+
+grep -Horni "keyword"
+Untuk mencari text dalam seluruh file di direktori secara rekursif
+
+ack-grep i "keyword" /location
+Untuk mencari text dalam seluruh file di direktori secara rekursif
+
+nano perintah.sh
+masukkan semua perintah yang mau diautomate
+chmod +x perintah.sh
+sudo ./perintah.sh
+Untuk mengotomasi seluruh perintah yang dimasukkan pada script
+
+sudo chown riky:riky location
+Untuk mengubah kepemilikan folder atau file
+
+sudo nautilus /location
+Menjelajah folder dengan tampilan grafik seizin root
+
+cd ~/.local/share/Trash
+Membuka tong sampah dari terminal
+
+sudo updatedb
+locate yg dicari
+Update alamat seluruh file dan folder ke database, lalu cari file/foldernya
+
+nohup perintahnya > /dev/null 2>&1 &
+-> output id_proses
+-> output catatan nohup.out
+Jalankan ubuntu shell silently
+
+kill nama_proses
+Matikan salah satu proses
+
+pkill -f nama_app
+Kill semua proses yg berhubungan dengan nama_app
+
+pkill -u nama_user
+Kill semua proses yang berhubungan dengan nama_user
+
+ufw allow nomor_port/tcp
+Tambahkan izin akses ke nama_port
+
+ufw delete allow nomor_port/tcp
+Hapus izin akses ke nama_port
+
+netstat -ntlp | grep LISTEN
+Cek port yang terbuka
+
+sumber : 
+<script src="https://gist.github.com/rikyperdana/e133df0d0cbb0b507fa877448f02a74b.js"></script>
