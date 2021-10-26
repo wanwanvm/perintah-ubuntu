@@ -1,5 +1,6 @@
 Perintah untuk mount hardisk/ssd di ubuntu
 mengatasi hardisk format NTFS tidak bisa menulis
+sudo fdisk-l // perintah untuk melihat partisi di ubuntu / windows
 
 (base) wanwanvm@miswan-os:~$ sudo ntfsfix /dev/sdb1
 [sudo] password for wanwanvm: 
